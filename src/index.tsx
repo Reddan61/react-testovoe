@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { ApolloProvider } from '@apollo/client';
-import { client } from './api';
-import { AuthContextProvider } from './context';
-import { App } from './App';
+import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the Data Grid
+import "ag-grid-community/styles/ag-theme-quartz.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { ApolloProvider } from "@apollo/client";
+import { client } from "./api";
+import { AuthContextProvider } from "./context";
+import { App } from "./App";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
 root.render(
@@ -21,4 +23,3 @@ root.render(
     </ApolloProvider>
   </React.StrictMode>
 );
-
